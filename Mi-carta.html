@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi carta</title>
+    <style>
+        section{
+            display: flex;                                      /* Tipo de display*/
+            justify-content: center;                            /* Centrar elemento*/
+            position: static; /* Color degradado*/
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background: linear-gradient(rgb(255, 153, 0) 5%,rgb(255, 255, 255) );        /* Color de fondo*/
+            width: 500px;               /* Ancho*/
+            height: 650PX;              /* Alto*/
+            padding: 1px;               /* Borde interno*/
+            box-sizing: border-box;     /* Añade borde interno a medidas deseadas*/
+            margin: 10px;               /* Margen externa*/
+            border-radius: 25% 10%;     /* Radio de las esquinas*/
+            border: 2px solid rgb(114, 180, 201);   /* Diseño de borde*/
+            overflow: hidden;           /* Oculta lo que se sale del elemento*/
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, .5); /*Efecto sombra*/
+        }
+        .card img{                 /* La IMG que esta dentro de CARD, haga......*/
+            width: 100%;           /*Ocupar el 100% de CARD*/
+            
+        }
+        .mascotas{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            position: relative;
+            justify-content: space-evenly;
+            flex-direction: row;
+            top: -110px;
+        }
+        .mascotas img{
+            width: 130px;
+            height: 200px;
+            border-radius: 80px;
+            justify-content: space-around;
+            flex-shrink: 30;
+            border: 3px double white;
+        }
+        .texto {
+            text-align: center;
+            position: relative;
+            top: -90px;
+            font-family: cursive;
+        }
+        p::after{
+            content:"😺";
+        }
+        p::before{
+            content: "🐶";
+        }
+        footer {
+            position: relative;
+            text-align: center;
+            top: -50px;
+            color: maroon;
+        }
+        body{
+            background-image: url(https://images.pexels.com/photos/6160167/pexels-photo-6160167.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100vw; /*Papara que el fondo ocupe toda la pantalla*/
+            height: 100vh; /*Papara que el fondo ocupe toda la pantalla*/
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <img src="fondo.jpg" alt="fondo">
+            <div class="mascotas">
+                <img src="canela.jpg" alt="foto canela">
+                <img src="luna.jpg" alt="foto luna">
+            </div>
+            <div class="texto">
+                <p>
+                     <q>
+                         <b>LAS BEBÉS</b>
+                    </q>
+                </p>
+                
+            </div>
+            <footer>En homenaje a Canelita que ya no esta con nosotros <br><br>y a Lunita que nos sigue acompañando.</footer>
+
+        </div>
+    </section>
+</body>
+</html>
